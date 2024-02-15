@@ -31,8 +31,7 @@ const index = () => {
                                 //   _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
                                   aria-label="links"
                                   fontWeight={600}
-                                  onMouseEnter={onOpen}
-                                  onMouseLeave={onClose}
+                                  onClick={!isOpen ? onOpen : onClose}
                               >
                                   Use cases {isOpen ? <Icon as={FiChevronUp} /> : <Icon as={FiChevronDown} />}
                               </MenuButton>
